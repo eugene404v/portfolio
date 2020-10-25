@@ -1,0 +1,178 @@
+.first {
+  background: $black;
+  width: 100vw;
+  height: 100vh;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-left: $menu-width;
+
+  &__logo {
+    width: 150px;
+    height: 150px;
+    background-color: $white;
+    border-radius: 8px;
+    transform: rotate(45deg);
+    color: $black;
+    font-size: 100px;
+    line-height: 150px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 100;
+    color: $light-gray;
+    margin-bottom: 10px;
+  }
+
+  &__techs {
+    &--type {
+      animation: blinking-cursor .8s cubic-bezier(.68, .01, .01, .99) 0s infinite;
+    }
+  }
+
+  &__cv {
+    position: absolute;
+    right: 50px;
+    top: 87vh;
+    color: $white;
+    font-weight: bold;
+    font-size: 28px;
+    transition: .2s;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $dark-gray;
+      transition: .2s;
+    }
+  }
+
+  &__socials {
+
+    width: 150px;
+    height: 150px;
+    perspective: 1000px;
+    margin-top: 150px;
+    
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: $menu-width;
+    height: 100vh;
+    background-color: $white;
+    border-right: 8px solid $light-gray;
+  }
+}
+
+@keyframes blinking-cursor {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+//
+
+.cube {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateX(45deg) rotateY(45deg);
+  transition: 1s;
+}
+
+.side {
+  backface-visibility: hidden;
+  color: #fff;
+  position: absolute;
+  font-size: 70px;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #fff;
+  text-align: center;
+  line-height: 150px;
+  background-color: #000;
+}
+
+.side a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+
+.side a:hover {
+  background-color: #fff;
+  transition: 1s;
+}
+
+.side a svg {
+  width: 70%;
+  height: 70%;
+  fill: #fff;
+  transition: 1s;
+}
+
+.side a:hover svg {
+  fill: #000;
+  transition: 1s;
+}
+
+.front {
+  transform: translateZ(75px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(75px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(75px);
+}
+
+.lefted {
+  transform: rotateX(0deg) rotateY(90deg);
+  transition: 1s;
+}
+
+.fronted {
+  transform: rotateX(0deg) rotateY(0deg);
+  transition: 1s;
+}
+
+.bottomed {
+  transform: rotateX(90deg) rotateY(0deg);
+  transition: 1s;
+}
+
+.sprite {
+  display: none;
+}
+
+.svg-telegram {
+  width: 200px;
+}
