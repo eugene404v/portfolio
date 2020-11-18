@@ -29,6 +29,17 @@
     border-radius: 3px;
     padding-top: 2px;
     transform: rotate(45deg);
+    transition: .2s;
+    &--works {
+      transition: .2s;
+      background-color: $white;
+      color: $black;
+    }
+    &--about {
+      transition: .2s;
+      background-color:blue;
+      color: rosybrown;
+    }
   }
 
   &__lang {
@@ -48,15 +59,27 @@
     color: $dark-gray;
     font-weight: bold;
     transition: .2s;
+    font-size: 22px;
+
     & span {
       flex-shrink: 0;
-      width: 20px;
-      height: 20px;
+      width: 25px;
+      height: 25px;
       display: flex;
       justify-content: center;
       align-items: center;
       transform: rotate(90deg);
+      position: relative;
+      transition: .2s;
+    }
 
+    & .header__span--2 {
+      color: $light-gray;
+      transition: .2s;
+    }
+
+    & .header__span--3 {
+      transition: .2s;
     }
 
     &--active,
@@ -66,7 +89,15 @@
       outline: none;
       color: $black;
       transition: .2s;
-      & span {}
+
+      & .header__span--2 {
+        color: $white;
+        transition: .2s;
+      }
+
+      & .header__span--3 {
+        transition: .2s;
+      }
     }
   }
 }

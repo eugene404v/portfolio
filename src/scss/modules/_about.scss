@@ -1,0 +1,12 @@
+.about {
+  &__title {
+    font-size: 50px;
+    margin-top: -40px;
+    position: relative;
+    &:before {
+      content: attr(data-text);
+      position: absolute;
+      color: red;
+    }
+  }
+}
