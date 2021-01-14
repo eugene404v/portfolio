@@ -1,41 +1,41 @@
 const data = [{
-        a: "lorem",
+        title: "lorem",
         b: 1
     },
     {
-        a: "ipsum",
+        title: "ipsum",
         b: 2
     },
     {
-        a: "adipisicing",
+        title: "adipisicing",
         b: 3
     },
     {
-        a: "consectetur",
+        title: "consectetur",
         b: 4
     },
     {
-        a: "voluptatum",
+        title: "voluptatum",
         b: 5
     },
     {
-        a: "dolorem",
+        title: "dolorem",
         b: 6
     },
     {
-        a: "suscipit",
+        title: "suscipit",
         b: 7
     },
     {
-        a: "repudiandae",
+        title: "repudiandae",
         b: 8
     },
     {
-        a: " atque nihil  fugit",
+        title: " atque nihil  fugit",
         b: 9
     },
     {
-        a: " itaque natus  nisi",
+        title: " itaque natus  nisi",
         b: 10
     }
 ]

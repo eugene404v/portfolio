@@ -1,5 +1,5 @@
 const input = document.querySelector('.first__techs--writing')
-const text = ['Aurelia ', 'ModX ', 'Laravel ', 'Docker ']
+const text = ['ReactJS ', 'Redux ', 'AntDesign ', 'TypeScript ']
 
 let line = 0
 let count = 0
